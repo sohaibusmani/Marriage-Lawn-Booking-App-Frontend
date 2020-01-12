@@ -96,7 +96,7 @@ class Login extends React.Component {
             </Button>
                 <span>Not a Member yet? </span>
                 <span
-                    // onClick={this.props.renderRegister}
+                    onClick={this.props.renderRegister}
                     style={{
                         color: 'blue',
                         // textDecoration: ''

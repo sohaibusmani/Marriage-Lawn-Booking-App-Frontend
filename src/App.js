@@ -7,12 +7,38 @@ import Register from './Screens/Register/Register'
 
 
 class App extends React.Component{
+ state={
+   showLogin:false,
+   showRegister:false
+ }
+
+ renderLogin = () => {
+   this.setState({
+     showLogin:true
+   })
+ }
+
+renderRegister = () => {
+  this.setState({
+    showLogin:false,
+    showRegister:true
+  })
+}
+
   render(){
     return(
       <React.Fragment>
-          <PrimarySearchAppBar/>
-          {/* <Login/> */}
-          <Register/>
+          <PrimarySearchAppBar renderLogin={this.renderLogin}/>
+          {
+            this.state.showLogin && <Login renderRegister={this.renderRegister}/>
+          }
+          {
+            this.state.showRegister && <Register/>
+          }
+          {
+            !this.state.showLogin && !this.state.showRegister && <LandingPage/>
+          }
+          
       </React.Fragment>
     )
   }
