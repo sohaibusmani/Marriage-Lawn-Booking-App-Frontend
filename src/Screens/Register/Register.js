@@ -61,7 +61,9 @@ class CreateAccount extends React.Component{
                 <Button
                     fullWidth
                     variant="contained"
-                    color="primary"
+                    style={{
+                        backgroundColor : '#ff0147'
+                    }}
                     // className={classes.submit}
                     onClick={this.handleNext}
                 >

@@ -81,7 +81,7 @@ class Login extends React.Component {
                         onChange={this.handleTextFields}
                     />
                     <FormControlLabel
-                        control={<Checkbox value="remember" color="primary" />}
+                        control={<Checkbox value="remember" color='#ff0147' />}
                         label="Remember me"
                     />
                 </form>
@@ -91,6 +91,9 @@ class Login extends React.Component {
                     color="primary"
                     className={classes.submit}
                     onClick={this.userLogin}
+                    style={{
+                        backgroundColor : '#ff0147'
+                    }}
                 >
                     Login
             </Button>
@@ -98,7 +101,7 @@ class Login extends React.Component {
                 <span
                     onClick={this.props.renderRegister}
                     style={{
-                        color: 'blue',
+                        color: '#ff0147',
                         // textDecoration: ''
                         cursor: 'pointer'
                     }}
