@@ -17,7 +17,7 @@ class PrimarySearchAppBar extends React.Component {
     return(
       <React.Fragment>
         <Navbar style={{backgroundColor:'#ff0147'}} expand="lg">
-  <Navbar.Brand href="#home">NikkahFied</Navbar.Brand>
+  <Navbar.Brand href="/LandingPage">NikkahFied</Navbar.Brand>
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
   <Navbar.Collapse id="basic-navbar-nav">
     <Nav className="mr-auto">
